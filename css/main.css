@@ -1599,7 +1599,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    min-height: 200px;
+    min-height: 170px;
 }
 
 .feature .single-feature h4 {
@@ -1640,22 +1640,35 @@ body.mobile-nav-active #mobile-nav-toggle {
         padding: 30px
     }
 }
-
-
-
-.footer-area {
-    padding-top: 100px
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
-.footer-area h6 {
-    margin-bottom: 25px;
-    font-size: 18px;
-    font-weight: 600
+.footer-area {
+    padding: 20px 0;
+    background-color: rgba(34, 34, 34, 0.9);
+}
+
+.footer-area p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #cccccc
 }
 
 .copy-right-text i,
 .copy-right-text a {
-    color: #c6b069
+    color: #f02828
 }
 
 .footer-social a {
@@ -1667,7 +1680,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-social a:hover i {
-    color: #c6b069
+    color: #f02828
 }
 
 .footer-social i {
@@ -1684,94 +1697,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 
-.single-footer-widget input {
-    border: none;
-    width: 80% !important;
-    font-weight: 300;
-    background: #f9f9ff;
-    padding-left: 20px;
-    border-radius: 0;
-    font-size: 14px;
-    padding: 10px 18px;
-    border: 1px solid #f9f9ff
-}
 
-.single-footer-widget input:focus {
-    background: #f9f9ff;
-    box-shadow: none;
-    border: 1px solid #f9f9ff
-}
-
-.single-footer-widget .bb-btn {
-    color: #c6b069;
-    color: #fff;
-    font-weight: 300;
-    border-radius: 0;
-    z-index: 9999;
-    cursor: pointer
-}
-
-.single-footer-widget .info {
-    position: absolute;
-    margin-top: 20%;
-    color: #fff;
-    font-size: 12px
-}
-
-.single-footer-widget .info.valid {
-    color: green
-}
-
-.single-footer-widget .info.error {
-    color: red
-}
-
-.single-footer-widget .click-btn {
-    background-color: #c6b069;
-    color: #fff;
-    border-radius: 0;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    padding: 8px 12px;
-    border: 0
-}
-
-.single-footer-widget::-moz-selection {
-    background-color: #191919 !important;
-    color: #777
-}
-
-.single-footer-widget::selection {
-    background-color: #191919 !important;
-    color: #777
-}
-
-.single-footer-widget::-webkit-input-placeholder {
-    color: #777;
-    font-weight: 300
-}
-
-.single-footer-widget:-moz-placeholder {
-    color: #777;
-    opacity: 1;
-    font-weight: 300
-}
-
-.single-footer-widget::-moz-placeholder {
-    color: #777;
-    opacity: 1;
-    font-weight: 300
-}
-
-.single-footer-widget:-ms-input-placeholder {
-    color: #777;
-    font-weight: 300
-}
-
-.single-footer-widget::-ms-input-placeholder {
-    color: #777;
-    font-weight: 300
-}
 
 @media (max-width: 991.98px) {
     .single-footer-widget {
@@ -1779,11 +1705,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 
-@media (max-width: 800px) {
-    .social-widget {
-        margin-top: 30px
-    }
-}
 
 .footer-text {
     padding-top: 20px
@@ -2718,155 +2639,18 @@ body.mobile-nav-active #mobile-nav-toggle {
     opacity: .5
 }
 
-.comments-area {
-    background: #fafaff;
-    border: 1px solid #eee;
-    padding: 50px 20px;
-    margin-top: 50px
-}
 
-@media (max-width: 414px) {
-    .comments-area {
-        padding: 50px 8px
-    }
-}
 
-.comments-area h4 {
-    text-align: center;
-    margin-bottom: 50px
-}
-
-.comments-area a {
-    color: #222
-}
-
-.comments-area .comment-list {
-    padding-bottom: 30px
-}
-
-.comments-area .comment-list:last-child {
-    padding-bottom: 0px
-}
-
-.comments-area .comment-list.left-padding {
-    padding-left: 25px
-}
-
-@media (max-width: 413px) {
-    .comments-area .comment-list .single-comment h5 {
-        font-size: 12px
-    }
-    .comments-area .comment-list .single-comment .date {
-        font-size: 11px
-    }
-    .comments-area .comment-list .single-comment .comment {
-        font-size: 10px
-    }
-}
-
-.comments-area .thumb {
-    margin-right: 20px
-}
-
-.comments-area .date {
-    font-size: 13px;
-    color: #cccccc
-}
-
-.comments-area .comment {
-    color: #777777
-}
-
-.comments-area .btn-reply {
-    background-color: #fff;
-    color: #222;
-    padding: 8px 30px;
-    display: block;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s
-}
-
-.comments-area .btn-reply:hover {
-    background-color: #c6b069;
-    color: #fff
-}
-
-.comment-form {
-    text-align: center;
-    background: #fafaff;
-    border: 1px solid #eee;
-    padding: 50px 20px;
-    margin-top: 50px
-}
-
-.comment-form h4 {
-    text-align: center;
-    margin-bottom: 50px
-}
-
-.comment-form .name {
-    padding-left: 0px
-}
 
 @media (max-width: 991px) {
-    .comment-form .name {
-        padding-right: 0px
+    .section-gap {
+        padding: 60px 0;
+    }
+    .contact-page-area .single-contact-address h5{
+        font-size: 13px;
+    }
+     .contact-page-area .single-contact-address p{
+        font-size: 13px;
     }
 }
 
-.comment-form .email {
-    padding-right: 0px
-}
-
-@media (max-width: 991px) {
-    .comment-form .email {
-        padding-left: 0px
-    }
-}
-
-.comment-form .form-control {
-    padding: 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0px;
-    width: 100%;
-    font-size: 13px;
-    color: #777777
-}
-
-.comment-form .form-control:focus {
-    box-shadow: none
-}
-
-.comment-form::-webkit-input-placeholder {
-    font-size: 13px;
-    color: #777
-}
-
-.comment-form::-moz-placeholder {
-    font-size: 13px;
-    color: #777
-}
-
-.comment-form:-ms-input-placeholder {
-    font-size: 13px;
-    color: #777
-}
-
-.comment-form:-moz-placeholder {
-    font-size: 13px;
-    color: #777
-}
-
-.comment-form .primary-btn {
-    border-radius: 0px !important;
-    border: 1px solid transparent
-}
-
-.comment-form .primary-btn:hover {
-    background: transparent;
-    border-color: #c6b069 !important;
-    color: #c6b069 !important
-}
